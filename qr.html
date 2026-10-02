@@ -1,0 +1,45 @@
+<h1>PayFlow - Báo cáo hiệu năng</h1>
+
+<div class="report">
+    <h2>Trước khi tối ưu</h2>
+
+    <table>
+        <tr>
+            <th>type</th>
+            <th>possible_keys</th>
+            <th>key</th>
+            <th>rows</th>
+            <th>Extra</th>
+        </tr>
+
+        <tr>
+            <td>ALL</td>
+            <td>NULL</td>
+            <td>NULL</td>
+            <td>5000000</td>
+            <td>Using where</td>
+        </tr>
+    </table>
+</div>
+
+<div class="report">
+    <h2>Sau khi tối ưu</h2>
+
+    <table>
+        <tr>
+            <th>type</th>
+            <th>possible_keys</th>
+            <th>key</th>
+            <th>rows</th>
+            <th>Extra</th>
+        </tr>
+
+        <tr>
+            <td>range</td>
+            <td>idx_type_date</td>
+            <td>idx_type_date</td>
+            <td>...</td>
+            <td>Using index condition</td>
+        </tr>
+    </table>
+</div>
